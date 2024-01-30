@@ -1,0 +1,132 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Мобілочка</title>
+        <link rel="stylesheet" href="style.css">
+      </head>
+<body>
+    <section class="main-store">
+        <div class="container">
+            <div class="menu">
+                <div class="logo">
+                    <img src="img/main-photo.png" alt="main-photo" class="main-photo">
+                    <span class="header-text">Мобілочка</span>
+                </div>
+                <button class="basket" id="basketBtn">
+                    <img src="img/basket-photo.png" alt="btn-basket" class="basket-photo">
+                    <span class="amount" id="basketCounter">0</span>
+                </button>
+            </div>
+            <div id="modal" class="modal">
+                <div class="modal-content" id="modalContent">
+                    <div class="header-basket">
+                        <span class="cart-basket">Cart</span>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div id="cartItems"></div>
+                    <p class="total-name">Total price: <strong class="total-price"></strong><span>$</span></p>
+                    <a href="#" class="buy-butt"><button class="buy-butt-basket">Оформити замовлення</button></a>
+                </div>
+            </div>
+            <button class="sortButton"></button>
+            <div class="container-product">
+                <div class="product-list">
+                    <div class="product-cart-main">  
+                        <div class="product-cart">
+                            <a href="#"><img src="img/Apple iPhone 15 Pro Max.jpg" alt="15 Pro Max" class="photo-product"></a>
+                            <span class="name-product">Apple iPhone 15 Pro Max</span>
+                            <p class="price-el">$<span class="price-product">2000</span></p>
+                            <div>
+                                <button class="button-product" onclick="amountCounter()">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-cart-main">
+                        <div class="product-cart">
+                            <a href="#"><img src="img/Google Pixel 7a.jpg" alt="Pixel 7a" class="photo-product"></a>
+                            <span class="name-product">Google Pixel 7a</span>
+                            <p class="price-el">$<span class="price-product">700</span></p>
+                            <div>
+                                <button class="button-product" onclick="amountCounter()">В корзину</button>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="product-cart-main">
+                        <div class="product-cart">
+                            <a href="#"><img src="img/Motorola Moto G54.jpg" alt="Motorola Moto G54" class="photo-product"></a>
+                            <span class="name-product">Motorola Moto G54</span>
+                            <p class="price-el">$<span class="price-product">1500</span></p>
+                            <div>
+                                <button class="button-product" onclick="amountCounter()">В корзину</button>
+                            </div>
+                        </div>
+                    </div class="product-cart-main">   
+                    <div class="product-cart-main">
+                        <div class="product-cart">
+                            <a href="#"><img src="img/Nokia 105.jpg" alt="Nokia 105" class="photo-product"></a>
+                            <span class="name-product">Nokia 105</span>
+                            <p class="price-el">$<span class="price-product">350</span></p>
+                            <div>
+                                <button class="button-product" onclick="amountCounter()">В корзину</button>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="product-cart-main">
+                        <div class="product-cart">
+                            <a href="#"><img src="img/Xiaomi Redmi Note 12 Pro 5G.jpg" alt="Redmi Note 12 Pro 5G" class="photo-product"></a>
+                            <span class="name-product">Xiaomi Redmi Note 12 Pro 5G</span>
+                            <p class="price-el">$<span class="price-product">1250</span></p>
+                            <div>
+                                <button class="button-product" onclick="amountCounter()">В корзину</button>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="product-cart-main">
+                        <div class="product-cart"> 
+                            <a href="#"><img src="img/Samsung Galaxy S21 FE 5G.jpg" alt="Samsung Galaxy S21 FE 5G" class="photo-product"></a>
+                            <span class="name-product">Samsung Galaxy S21 FE 5G</span>
+                            <p class="price-el">$<span class="price-product">1200</span></p>
+                            <div>
+                                <button class="button-product" onclick="amountCounter()">В корзину</button>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="product-cart-main">
+                        <div class="product-cart">
+                            <a href="#"><img src="img/Poco X5 Pro.jpg" alt="Poco X5 Pro" class="photo-product"></a>
+                            <span class="name-product">Poco X5 Pro</span>
+                            <p class="price-el">$<span class="price-product">1700</span></p>
+                            <div>
+                                <button class="button-product" onclick="amountCounter()">В корзину</button>
+                            </div>
+                        </div>
+                    </div>    
+                    <div class="product-cart-main">
+                        <div class="product-cart">
+                            <a href="#"><img src="img/Realme GT5.jpg" alt="Realme GT5" class="photo-product"></a>
+                            <span class="name-product">Realme GT5</span>
+                            <p class="price-el">$<span class="price-product">900</span></p>
+                            <div>
+                                <button class="button-product" onclick="amountCounter()">В корзину</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-cart-main">
+                        <div class="product-cart">
+                            <a href="#"><img src="img/Nokia G42.jpg" alt="Nokia G42.jpg" class="photo-product"></a>
+                            <span class="name-product">Nokia G42</span>
+                            <p class="price-el">$<span class="price-product">1100</span></p>
+                            <div>
+                                <button class="button-product" onclick="amountCounter()">В корзину</button>
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
